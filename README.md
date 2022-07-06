@@ -4,6 +4,6 @@
   
 Адрес сайта в на Яндекс.Облако:
 
-в формате http [mesto.plavrenkov](http:\\mesto.plavrenkov.nomoredomains.sbs)
+в формате http [mesto.plavrenkov](http://mesto.plavrenkov.nomoredomains.sbs)
 
-в формате https [mesto.plavrenkov](https:\\mesto.plavrenkov.nomoredomains.sbs)
+в формате https [mesto.plavrenkov](https://mesto.plavrenkov.nomoredomains.sbs)
