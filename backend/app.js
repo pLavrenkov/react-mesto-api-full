@@ -13,7 +13,8 @@ const {
 const { handleError, urlRegExp } = require('./utils/utils');
 const auth = require('./middlewares/auth');
 const NotFoundError = require('./errors/NotFoundError');
-const {requestLogger, errorLogger} = require('./middlewares/logger');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
+const cors = require('./middlewares/cors');
 
 const { PORT = 3000 } = process.env;
 
@@ -27,6 +28,8 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.use(requestLogger);
+
+app.use(cors);
 
 app.use('/signup', celebrate({
   body: Joi.object().keys({
