@@ -1,9 +1,10 @@
+require('dotenv').config();
 const validator = require('validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-require('dotenv').config();
 
-const { JWT_SECRET, handleValidationError } = require('../utils/utils');
+const { NODE_ENV, JWT_SECRET } = process.env;
+const { handleValidationError } = require('../utils/utils');
 const User = require('../models/user');
 const BadRequestError = require('../errors/BadRequestError');
 const ConflictError = require('../errors/ConflictError');
@@ -89,7 +90,7 @@ module.exports.login = (req, res, next) => {
   User.findUserByCredentials(res, next, email, password)
     .then((user) => {
       if (user) {
-        const token = jwt.sign({ _id: user._id }, JWT_SECRET, { expiresIn: '7d' });
+        const token = jwt.sign({ _id: user._id }, (NODE_ENV === 'production' ? JWT_SECRET : 'dev-code-solution'), { expiresIn: '7d' });
         res
           .cookie('jwt', token, { maxAge: 3600000 * 24 * 7, httpOnly: true })
           .status(200).send({
