@@ -1,11 +1,8 @@
 {
   "files": {
-    "main.css": "./static/css/main.27fb57aa.css",
+    "main.css": "./static/css/main.326e6caa.css",
     "main.js": "./static/js/main.4ceeec86.js",
     "static/js/787.5530211c.chunk.js": "./static/js/787.5530211c.chunk.js",
-    "static/media/Inter-Black.ttf": "./static/media/Inter-Black.5bc9c4d5770576fe98af.ttf",
-    "static/media/Inter-Medium.ttf": "./static/media/Inter-Medium.9cbff87dc577185b8630.ttf",
-    "static/media/Inter-Regular.ttf": "./static/media/Inter-Regular.96ce55e3ba0d6a209090.ttf",
     "static/media/Inter-Medium.otf": "./static/media/Inter-Medium.16eda82a3c37a6edda09.otf",
     "static/media/Inter-Black.otf": "./static/media/Inter-Black.b2a2b192860f79c0b89c.otf",
     "static/media/Inter-Black.woff": "./static/media/Inter-Black.fd37f7e052bea1018058.woff",
@@ -26,12 +23,12 @@
     "static/media/EditButton.svg": "./static/media/EditButton.af236f6cf67005f1d7aa.svg",
     "static/media/avatarEdit.svg": "./static/media/avatarEdit.ae1a976ddb506239e9f0.svg",
     "static/media/CloseIcon.svg": "./static/media/CloseIcon.039f1f5203f653b4bacd.svg",
-    "main.27fb57aa.css.map": "./static/css/main.27fb57aa.css.map",
+    "main.326e6caa.css.map": "./static/css/main.326e6caa.css.map",
     "main.4ceeec86.js.map": "./static/js/main.4ceeec86.js.map",
     "787.5530211c.chunk.js.map": "./static/js/787.5530211c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.27fb57aa.css",
+    "static/css/main.326e6caa.css",
     "static/js/main.4ceeec86.js"
   ]
 }
