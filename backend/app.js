@@ -58,12 +58,13 @@ app.use(auth);
 app.use('/users', usersRoutes);
 app.use('/cards', cardsRoutes);
 
-app.use(errorLogger);
-
 app.use((req, res, next) => {
   const error = new NotFoundError('Невозможно отобразить страницу');
   next(error);
 });
+
+app.use(errorLogger);
+
 app.use(errors());
 app.use((err, req, res, next) => handleError(err, req, res, next));
 
